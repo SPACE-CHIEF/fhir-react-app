@@ -21,7 +21,7 @@ export default class Launcher extends React.Component {
             clientId: "127afa4e-286f-47ae-ac19-ecc3d7f4ddac",
             scope: "launch launch/patient patient/read online_access openid profile",
             redirectUri: "./home",
-            iss: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSIsImQiOjB9/fhir"
+            iss: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSJ9/fhir"
 
             // WARNING: completeInTarget=true is needed to make this work
             // in the codesandbox frame. It is otherwise not needed if the
