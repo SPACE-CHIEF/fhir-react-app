@@ -2,8 +2,8 @@ import React from "react"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Navigation, MobileMenu, Home, Footer }  from "./components"
 import { Appointments, MyGenetics, Launcher } from "./components";
-
 import './scss/style.scss'
+
 function App() {
   return (
     <div className="App">

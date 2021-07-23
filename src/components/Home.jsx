@@ -1,6 +1,7 @@
 import React, { useRef } from "react"
 import { Link, withRouter } from "react-router-dom"
 import { Grid } from '@material-ui/core';
+import { FhirClientProvider } from "../components";
 
 function BoxNav(props){
     return(
@@ -42,26 +43,28 @@ export function Page(props){
     );
 }
 function Home(props) {
-    return(
-        <div style={{marginRight: 24, marginLeft: 24, marginTop: 10 , marginBottom: 20}}>
-            <Grid container spacing={2}>
-                <Grid item xs={12} sm={12}>
-                    <Page buttonMessage="Send Message" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    return (
+        <FhirClientProvider>
+            <div style={{ marginRight: 24, marginLeft: 24, marginTop: 10, marginBottom: 20 }}>
+                <Grid container spacing={2}>
+                    <Grid item xs={12} sm={12}>
+                        <Page buttonMessage="Send Message" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Nullam lacus tellus, semper et nulla quis, pharetra cursus metus. Fusce tincidunt mattis diam." subject="New Messages"
-                    />
-                </Grid>
-                <Grid item xs={12} sm={12}>
-                    <Page buttonMessage="See Genetic Analysis" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        />
+                    </Grid>
+                    <Grid item xs={12} sm={12}>
+                        <Page buttonMessage="See Genetic Analysis" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Nullam lacus tellus, semper et nulla quis, pharetra cursus metus. Fusce tincidunt mattis diam." subject="myGenetics"
-                    />
-                </Grid>
-                <Grid item xs={12} sm={12}>
-                    <Page buttonMessage="See All Visits" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        />
+                    </Grid>
+                    <Grid item xs={12} sm={12}>
+                        <Page buttonMessage="See All Visits" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Nullam lacus tellus, semper et nulla quis, pharetra cursus metus. Fusce tincidunt mattis diam." subject="Upcoming Appointments"
-                    />
+                        />
+                    </Grid>
                 </Grid>
-            </Grid>
-        </div>
+            </div>
+        </FhirClientProvider>
     );
 }
 
