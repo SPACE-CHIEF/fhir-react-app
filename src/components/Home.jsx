@@ -1,7 +1,7 @@
 import React, { useRef } from "react"
 import { Link, withRouter } from "react-router-dom"
 import { Grid } from '@material-ui/core';
-import { FhirClientProvider } from "../components";
+import { FhirClientProvider, Patient } from "../components";
 
 function BoxNav(props){
     return(
@@ -45,6 +45,7 @@ export function Page(props){
 function Home(props) {
     return (
         <FhirClientProvider>
+            <Patient />
             <div style={{ marginRight: 24, marginLeft: 24, marginTop: 10, marginBottom: 20 }}>
                 <Grid container spacing={2}>
                     <Grid item xs={12} sm={12}>

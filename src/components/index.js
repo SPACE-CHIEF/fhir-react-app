@@ -6,3 +6,4 @@ export { default as Appointments } from "./Appointments";
 export { default as MyGenetics } from "./MyGenetics";
 export { default as Launcher } from "./Launcher";
 export { default as FhirClientProvider } from "./FhirClientProvider";
+export { default as Patient } from "./Patient";
