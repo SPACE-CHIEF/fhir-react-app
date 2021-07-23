@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/fhir-react-pages/static/css/main.b464e81c.chunk.css",
+    "main.js": "/fhir-react-pages/static/js/main.58e5f72d.chunk.js",
+    "main.js.map": "/fhir-react-pages/static/js/main.58e5f72d.chunk.js.map",
+    "runtime-main.js": "/fhir-react-pages/static/js/runtime-main.9a05c62d.js",
+    "runtime-main.js.map": "/fhir-react-pages/static/js/runtime-main.9a05c62d.js.map",
+    "static/js/2.f11abdfe.chunk.js": "/fhir-react-pages/static/js/2.f11abdfe.chunk.js",
+    "static/js/2.f11abdfe.chunk.js.map": "/fhir-react-pages/static/js/2.f11abdfe.chunk.js.map",
+    "static/js/3.9b4d40a0.chunk.js": "/fhir-react-pages/static/js/3.9b4d40a0.chunk.js",
+    "static/js/3.9b4d40a0.chunk.js.map": "/fhir-react-pages/static/js/3.9b4d40a0.chunk.js.map",
+    "index.html": "/fhir-react-pages/index.html",
+    "static/css/main.b464e81c.chunk.css.map": "/fhir-react-pages/static/css/main.b464e81c.chunk.css.map",
+    "static/js/2.f11abdfe.chunk.js.LICENSE.txt": "/fhir-react-pages/static/js/2.f11abdfe.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a05c62d.js",
+    "static/js/2.f11abdfe.chunk.js",
+    "static/css/main.b464e81c.chunk.css",
+    "static/js/main.58e5f72d.chunk.js"
+  ]
+}
