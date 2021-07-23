@@ -1,0 +1,58 @@
+.left {
+    @include shadow
+}
+
+.navBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.box-nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.box-nav-wrap .lnk {
+    color: $white;
+    font-size: 2.5vw;
+    transition: 0.3s;
+}
+
+.box-nav-wrap .lnk:hover{
+    color: $darkBlue;
+    font-size: 2.5vw;
+    transition: 0.3s;
+}
+
+.lnk-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-wrapper-dsktp {
+    background-color: $limeGreen;
+    padding: 2%;
+    color: $white;
+    box-shadow: #666 0px 7px 7px 0px;
+    flex-flow: column wrap;
+    display: flex;
+    // margin-left: 24px;
+    position: relative;
+    // margin-top: 10px;
+    // margin-right: 24px;
+}
+
+.cards {
+    // padding-top:1.625rem;
+    padding-bottom: 1.625rem;
+    border-radius: 5px;
+    margin-bottom: 65px;
+    position: relative;
+    width: calc(100% - 3rem);
+    left: 50%;
+    transform: translateX(-50%);
+    // margin-top: 32px;
+}
