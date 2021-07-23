@@ -3,21 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { oauth2 as SMART } from "fhirclient";
-
-SMART.init({
-  iss:
-      "https://launch.smarthealthit.org/v/r3/sim/eyJoIjoiMSIsImIiOiJzbWFydC0xNjQyMDY4IiwiZSI6InNtYXJ0LVByYWN0aXRpb25lci03MTYxNDUwMiJ9/fhir",
-  redirectUri: "https://fhir-react.herokuapp.com/",
-  clientId: "127afa4e-286f-47ae-ac19-ecc3d7f4ddac",
-  scope: "launch/patient offline_access openid fhirUser",
-
-  // WARNING: completeInTarget=true is needed to make this work in the codesandbox
-  // frame. It is otherwise not needed if the target is not another frame or window
-  // but since the entire example works in a frame here, it gets confused without
-  // setting this!
-  // completeInTarget: true
-});
 
 ReactDOM.render(
   <React.StrictMode>

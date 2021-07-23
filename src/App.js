@@ -1,7 +1,7 @@
 import React from "react"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Navigation, MobileMenu, Home, Footer }  from "./components"
-import { Appointments, MyGenetics } from "./components";
+import { Appointments, MyGenetics, Launcher } from "./components";
 
 import './scss/style.scss'
 function App() {
@@ -11,7 +11,8 @@ function App() {
       <Router>
         <Navigation/>
         <Switch>
-          <Route path="/" exact component={() => <Home/>}/>
+          <Route path="/" exact component={() => <Launcher/>}></Route>
+          <Route path="/Home" exact component={() => <Home/>}/>
           <Route path="/Appointments" exact component={() => <Appointments/>}/>
           <Route path="/myGenetics" exact component={() => <MyGenetics/>}/>
         </Switch>

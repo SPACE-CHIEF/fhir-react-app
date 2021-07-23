@@ -43,12 +43,12 @@ function Navigation(props){
                 </a>
 
                 <div class="header__links hide-for-mobile">
-                    <a href="/">Home</a>
+                    <a href="/Home">Home</a>
                     <a href="/Appointments">Appointments</a>
                     <a href="/Messages">Messages</a>
                     <a href="/myGenetics">myGenetics</a>
                     <a href="/Settings">Profile Settings</a>
-                    <a href="/logout">Logout</a>
+                    <a href="/">Logout</a>
                 </div>
             </nav>
         </header>
