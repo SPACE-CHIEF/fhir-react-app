@@ -5,24 +5,29 @@ function PatientName({ name = [] }) {
     let entry =
         name.find(nameRecord => nameRecord.use === "official") || name[0];
     if (!entry) {
-        return <h1>No Name</h1>;
+        return <b>No Name</b>;
     }
-    return <h1>{entry.given.join(" ") + " " + entry.family}</h1>;
+    return <b>{entry.given.join(" ") + " " + entry.family}</b>;
 }
 
-function PatientBanner(patient) {
-    return (
-        <div>
-            <PatientName name={patient.name} />
-            <span>
-                Gender: <b>{patient.gender}</b>,{" "}
-            </span>
-            <span>
-                DOB: <b>{patient.birthDate}</b>
-            </span>
-        </div>
-    );
+function PatientDOB(patient){
+    return <p>{patient.birthDate}</p>
 }
+
+
+// function PatientBanner(patient) {
+//     return (
+//         <div>
+//             <PatientName name={patient.name} />
+//             <span>
+//                 Gender: <b>{patient.gender}</b>,{" "}
+//             </span>
+//             <span>
+//                 DOB: <b>{patient.birthDate}</b>
+//             </span>
+//         </div>
+//     );
+// }
 
 export default class Patient extends React.Component {
     static contextType = FhirClientContext;
@@ -53,6 +58,6 @@ export default class Patient extends React.Component {
         if (error) {
             return error.message;
         }
-        return <PatientBanner {...patient} />;
+        return <PatientName {...patient} />;
     }
 }

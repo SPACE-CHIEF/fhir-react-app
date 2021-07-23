@@ -45,7 +45,6 @@ export function Page(props){
 function Home(props) {
     return (
         <FhirClientProvider>
-            <Patient />
             <div style={{ marginRight: 24, marginLeft: 24, marginTop: 10, marginBottom: 20 }}>
                 <Grid container spacing={2}>
                     <Grid item xs={12} sm={12}>
