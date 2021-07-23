@@ -7,7 +7,7 @@ import { oauth2 as SMART } from "fhirclient";
 
 SMART.init({
   iss:
-      "https://fhir-react.herokuapp.com/",
+      "https://launch.smarthealthit.org/v/r3/sim/eyJoIjoiMSIsImIiOiJzbWFydC0xNjQyMDY4IiwiZSI6InNtYXJ0LVByYWN0aXRpb25lci03MTYxNDUwMiJ9/fhir",
   redirectUri: "https://fhir-react.herokuapp.com/",
   clientId: "127afa4e-286f-47ae-ac19-ecc3d7f4ddac",
   scope: "launch/patient offline_access openid fhirUser",
