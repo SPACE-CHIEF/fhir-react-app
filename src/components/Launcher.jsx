@@ -19,10 +19,10 @@ export default class Launcher extends React.Component {
     componentDidMount() {
         SMART.authorize({
             clientId: "127afa4e-286f-47ae-ac19-ecc3d7f4ddac",
-            scope: "launch patient/Patient.read online_access openid profile",
-            redirectUri: "https://fhir-react.herokuapp.com/Home",
+            scope: "launch profile fhirUser openid online_access launch/patient",
+            redirectUri: "./Home",
             // iss: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSIsImIiOiI4N2EzMzlkMC04Y2FlLTQxOGUtODljNy04NjUxZTZhYWIzYzYifQ/fhir",
-            iss: "https://fhir-react.herokuapp.com/",
+            iss: "/",
             // try "./" to test with cerner sandbox
             // WARNING: completeInTarget=true is needed to make this work
             // in the codesandbox frame. It is otherwise not needed if the
