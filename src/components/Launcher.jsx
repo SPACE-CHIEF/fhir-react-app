@@ -23,7 +23,7 @@ export default class Launcher extends React.Component {
             redirectUri: "./Home",
             // iss: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSIsImIiOiI4N2EzMzlkMC04Y2FlLTQxOGUtODljNy04NjUxZTZhYWIzYzYifQ/fhir",
             iss: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSJ9/fhir",
-
+            // try "./" to test with cerner sandbox
             // WARNING: completeInTarget=true is needed to make this work
             // in the codesandbox frame. It is otherwise not needed if the
             // target is not another frame or window but since the entire

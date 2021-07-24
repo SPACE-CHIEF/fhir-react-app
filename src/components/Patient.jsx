@@ -1,5 +1,6 @@
 import React from "react";
 import { FhirClientContext } from "../FhirClientContext";
+const moment = require('moment');
 
 function PatientName({ name = [] }) {
     let entry =
@@ -12,6 +13,17 @@ function PatientName({ name = [] }) {
 
 function PatientDOB(patient){
     return <p>{patient.birthDate}</p>
+}
+
+
+function PatientAge(patient){
+    let now = moment().format('LLLL');
+    return <p>{}</p>
+}
+
+
+function PatientPhone(patient){
+    return <p>{patient.telecom[0].value}</p>
 }
 
 
