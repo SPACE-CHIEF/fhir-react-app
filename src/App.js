@@ -2,10 +2,12 @@ import React from "react"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Navigation, Home }  from "./components"
 import { Appointments, MyGenetics, Launcher } from "./components";
+import { FhirClientProvider } from "./components";
 import './scss/style.scss'
 
 function App() {
   return (
+    <FhirClientProvider>
     <div className="App">
       <a id="top"></a>
       <Router>
@@ -20,6 +22,7 @@ function App() {
         {/* <Footer/> */}
       </Router>
     </div>
+    </FhirClientProvider>
   );
 }
 
