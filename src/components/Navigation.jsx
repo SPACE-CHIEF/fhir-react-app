@@ -1,5 +1,5 @@
-import React, { useRef } from "react"
-import { Link, withRouter } from "react-router-dom"
+import React from "react"
+import {withRouter } from "react-router-dom"
 
 function Navigation(props){
     // Functions shows the menu for mobile devices
@@ -36,7 +36,7 @@ function Navigation(props){
             </div>
             <nav class="container flex flex-jc-sb flex-ai-c">
                 
-                <a href="/" class="header__logo">
+                <a href="/Home" class="header__logo">
                     <img src="../logo_nobg.png" alt="GeneEngage Logo"/>
                 </a>
 

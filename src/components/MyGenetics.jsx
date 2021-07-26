@@ -3,7 +3,6 @@ import { Grid } from "@material-ui/core";
 import { Page } from "./Home";
 import { PageNoButton } from './PageNoButton';
 import { FhirClientProvider, PatientName } from "../components";
-import { FhirClientContext } from "../FhirClientContext";
 function myGenetics() {
     return (
         <FhirClientProvider>
