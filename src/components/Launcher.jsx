@@ -18,9 +18,9 @@ export default function Launch(){
             scope: "launch patient/Patient.read online_access openid profile",
             redirectUri: "https://fhir-react.herokuapp.com/Home",
             // iss: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSIsImIiOiI4N2EzMzlkMC04Y2FlLTQxOGUtODljNy04NjUxZTZhYWIzYzYifQ/fhir"
-            iss: "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d"
+            iss: "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d",
             // iss: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSJ9/fhir",
-            // launch: "https://fhir-react.herokuapp.com"
+            launch: "https://fhir-react.herokuapp.com"
         })
     )
 }
