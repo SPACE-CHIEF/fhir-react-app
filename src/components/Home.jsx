@@ -1,8 +1,6 @@
 import React from "react"
-import {withRouter } from "react-router-dom"
 import { Grid } from '@material-ui/core';
 import FhirClientProvider from "./FhirClientProvider";
-// import { FhirClientProvider } from "../components";
 
 function BoxNav(props){
     return(
@@ -69,4 +67,4 @@ function Home(props) {
     );
 }
 
-export default withRouter(Home);
+export default Home;

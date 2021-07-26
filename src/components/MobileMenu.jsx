@@ -1,7 +1,6 @@
-import React, { useRef } from "react"
-import { Link, withRouter } from "react-router-dom"
+import React from "react"
 
-function MobileMenu(props){
+function MobileMenu(){
 
     return(
         <div className="header__menu container has-fade">
@@ -16,4 +15,4 @@ function MobileMenu(props){
     );
 }
 
-export default withRouter(MobileMenu)
+export default MobileMenu;

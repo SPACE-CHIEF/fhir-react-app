@@ -1,9 +1,9 @@
 import React from 'react';
 import { Grid } from "@material-ui/core";
 import { Page } from "./Home";
-import { PageNoButton } from './PageNoButton';
-import { PatientName } from "../components";
-import FhirClientProvider from './FhirClientProvider';
+import PageNoButton from './PageNoButton';
+import PatientName from "./Patient/PatientName";
+import FhirClientProvider from "./FhirClientProvider";
 function myGenetics() {
     return (
         <FhirClientProvider>
@@ -39,7 +39,7 @@ function myGenetics() {
                     </Grid>
                 </Grid>
             </div>
-            </FhirClientProvider>
+        </FhirClientProvider>
     );
 }
 export default myGenetics;

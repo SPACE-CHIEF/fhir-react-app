@@ -1,7 +1,8 @@
 import React from "react"
-import {withRouter } from "react-router-dom"
+import { Link } from "react-router-dom";
+// import {withRouter } from "react-router-dom"
 
-function Navigation(props){
+function Navigation(){
     // Functions shows the menu for mobile devices
     function showMenu(){
         const header = document.querySelector('.header');
@@ -47,16 +48,22 @@ function Navigation(props){
                 </a>
 
                 <div class="header__links hide-for-mobile">
-                    <a href="/Home">Home</a>
-                    <a href="/Appointments">Appointments</a>
-                    <a href="/Messages">Messages</a>
-                    <a href="/myGenetics">myGenetics</a>
-                    <a href="/Settings">Profile Settings</a>
-                    <a href="/">Logout</a>
+                    {/* <a href="/Home">Home</a> */}
+                    <Link to="/Home">Home</Link>
+                    {/* <a href="/Appointments">Appointments</a> */}
+                    <Link to="/Appointments">Appointments</Link>
+                    {/* <a href="/Messages">Messages</a> */}
+                    <Link to="/Messages">Messages</Link>
+                    {/* <a href="/myGenetics">myGenetics</a> */}
+                    <Link to="/myGenetics">myGenetics</Link>
+                    {/* <a href="/Settings">Profile Settings</a> */}
+                    <Link to="/Settings">Profile Settings</Link>
+                    <Link to="/">Logout</Link>
+                    {/* <a href="/">Logout</a> */}
                 </div>
             </nav>
         </header>
     );
 }
 
-export default withRouter(Navigation);
+export default Navigation;
