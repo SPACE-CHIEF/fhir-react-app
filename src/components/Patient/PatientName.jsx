@@ -1,8 +1,7 @@
 import React from "react";
-import { FhirClientContext } from "../FhirClientContext";
-const moment = require('moment');
+import { FhirClientContext } from "../../FhirClientContext";
 
-function PatientName({ name = [] }) {
+function patientName({ name = [] }) {
     let entry =
         name.find(nameRecord => nameRecord.use === "official") || name[0];
     if (!entry) {
@@ -11,22 +10,10 @@ function PatientName({ name = [] }) {
     return <b>{entry.given.join(" ") + " " + entry.family}</b>;
 }
 
-function PatientDOB(patient){
-    return <p>{patient.birthDate}</p>
-}
 
-
-function PatientAge(patient){
-    let now = moment('2021-23-07');
-    let dob = moment(patient.birthDate)
-    let age = now.d
-    return <p>{}</p>
-}
-
-
-function PatientPhone(patient){
-    return <p>{patient.telecom[0].value}</p>
-}
+// function PatientPhone(patient){
+//     return <p>{patient.telecom[0].value}</p>
+// }
 
 
 // function PatientBanner(patient) {
@@ -43,7 +30,7 @@ function PatientPhone(patient){
 //     );
 // }
 
-export default class Patient extends React.Component {
+export default class PatientName extends React.Component {
     static contextType = FhirClientContext;
     constructor(props) {
         super(props);
@@ -72,6 +59,6 @@ export default class Patient extends React.Component {
         if (error) {
             return error.message;
         }
-        return <PatientName {...patient} />;
+        return <patientName {...patient} />;
     }
 }

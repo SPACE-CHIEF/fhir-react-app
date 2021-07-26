@@ -35,7 +35,11 @@ function Navigation(props){
 
             </div>
             <nav class="container flex flex-jc-sb flex-ai-c">
-                <a href="/" class="header__logo">GeneEngage</a>
+                
+                <a href="/" class="header__logo">
+                    <img src="../logo_nobg.png" alt="GeneEngage Logo"/>
+                </a>
+
                 <a  id="btnHamburger" href="#"class="header__toggle hide-for-desktop" onClick={showMenu}>
                     <span></span>
                     <span></span>

@@ -2,17 +2,15 @@ import React from 'react';
 import { Grid } from "@material-ui/core";
 import { Page } from "./Home";
 import { PageNoButton } from './PageNoButton';
-import { FhirClientProvider, Patient } from "../components";
+import { FhirClientProvider, PatientName } from "../components";
 import { FhirClientContext } from "../FhirClientContext";
-
-function myGenetics(
-) {
+function myGenetics() {
     return (
         <FhirClientProvider>
             <div style={{ marginRight: 24, marginLeft: 24, marginTop: 10, marginBottom: 20 }}>
                 <Grid container spacing={2}>
                     <Grid item xs={12} sm={12}>
-                        <PageNoButton subject={<Patient/>} content={["Age: 39, DOB: 05/06/1977, Gender: Male", <br />,
+                        <PageNoButton subject={<PatientName/>} content={["Age: 39, DOB: 05/06/1977, Gender: Male", <br />,
                             "Patient ID: 69432132, Phone: 561-321-1513", <br />, "PCP: Dr. Yuan, Phone: 671-456-7841",
                             <br />, "Insurance: Aetna Better Health"]}
                         />

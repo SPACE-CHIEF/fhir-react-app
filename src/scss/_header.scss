@@ -1,5 +1,10 @@
 .header {
-
+    &__logo{
+        img {
+            width: 100px;
+            height: auto;
+        }
+    }
     &.open {
         .overlay{
             display: block;
