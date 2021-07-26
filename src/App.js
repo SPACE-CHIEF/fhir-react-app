@@ -8,15 +8,15 @@ import './scss/style.scss'
 function App() {
   return (
     <div className="App">
-      <Launcher/>
       <a id="top"></a>
         <Router>
+        <Launcher/>
+        <FhirClientProvider>
           <Navigation/>
+        </FhirClientProvider>
             <Switch>
               <Route path="/" exact component={() => <Launcher/>}></Route>
-              <FhirClientProvider>
-                <Route path="/Home" exact component={() => <Home/>}/>
-              </FhirClientProvider>
+              <Route path="/Home" exact component={() => <Home/>}/>
               <Route path="/Appointments" exact component={() => <Appointments/>}/>
               <Route path="/myGenetics" exact component={() => <MyGenetics/>}/>
             </Switch>
