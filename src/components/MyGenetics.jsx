@@ -3,8 +3,10 @@ import { Grid } from "@material-ui/core";
 import { Page } from "./Home";
 import { PageNoButton } from './PageNoButton';
 import { PatientName } from "../components";
+import FhirClientProvider from './FhirClientProvider';
 function myGenetics() {
     return (
+        <FhirClientProvider>
             <div style={{ marginRight: 24, marginLeft: 24, marginTop: 10, marginBottom: 20 }}>
                 <Grid container spacing={2}>
                     <Grid item xs={12} sm={12}>
@@ -37,6 +39,7 @@ function myGenetics() {
                     </Grid>
                 </Grid>
             </div>
+            </FhirClientProvider>
     );
 }
 export default myGenetics;

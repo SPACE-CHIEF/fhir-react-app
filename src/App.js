@@ -10,19 +10,16 @@ function App() {
     <div className="App">
       <a id="top"></a>
         <Router>
-        <Launcher/>
-        <FhirClientProvider>
-          <Navigation/>
-        </FhirClientProvider>
             <Switch>
               <Route path="/" exact component={() => <Launcher/>}></Route>
-              <Route path="/Home" exact component={() => <Home/>}/>
-              <Route path="/Appointments" exact component={() => <Appointments/>}/>
-              <Route path="/myGenetics" exact component={() => <MyGenetics/>}/>
+              <Route path="/Home" component={() => <Home/>}/>
+              <Route path="/Appointments" component={() => <Appointments/>}/>
+              <Route path="/myGenetics" component={() => <MyGenetics/>}/>
             </Switch>
             {/* <MobileMenu/> */}
             {/* <Footer/> */}
         </Router>
+        <Navigation/>
     </div>
   );
 }
