@@ -17,7 +17,9 @@ function PatientDOB(patient){
 
 
 function PatientAge(patient){
-    let now = moment().format('LLLL');
+    let now = moment('2021-23-07');
+    let dob = moment(patient.birthDate)
+    let age = now.d
     return <p>{}</p>
 }
 
