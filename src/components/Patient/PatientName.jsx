@@ -1,7 +1,7 @@
 import React from "react";
 import { FhirClientContext } from "../../FhirClientContext";
 
-function patientName({ name = [] }) {
+function PName({ name = [] }) {
     let entry =
         name.find(nameRecord => nameRecord.use === "official") || name[0];
     if (!entry) {
@@ -59,6 +59,6 @@ export default class PatientName extends React.Component {
         if (error) {
             return error.message;
         }
-        return <patientName {...patient} />;
+        return <PName {...patient}/>;
     }
 }

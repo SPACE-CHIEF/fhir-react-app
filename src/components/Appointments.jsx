@@ -1,6 +1,6 @@
 import React from 'react';
 
-    function Appointments(props) {
+    function Appointments() {
         return(
             <div className="">
                 <p>Hello from Appointments Component.</p>

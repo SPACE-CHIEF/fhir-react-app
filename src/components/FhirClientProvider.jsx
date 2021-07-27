@@ -3,30 +3,40 @@ import { oauth2 as SMART } from "fhirclient";
 import { FhirClientContext } from "../FhirClientContext";
 
 export default class FhirClientProvider extends React.Component {
-  componentDidMount() {
-    SMART.ready().then(
-      (client) => this.setState({ client }),
-      (error) => this.setState({ error })
-    );
+  constructor(props) {
+    super(props);
+    this.state = {
+      client: null,
+      error: null
+    };
+    this.setClient = client => this.setState({ client });
   }
 
   render() {
+    if (this.state.error) {
+      return <pre>{this.state.error.message}</pre>;
+    }
     return (
-      <FhirClientContext.Provider value={this.state || {}}>
+      <FhirClientContext.Provider
+        value={{
+          client: this.state.client,
+          setClient: this.setClient
+        }}
+      >
         <FhirClientContext.Consumer>
-          {({ client, error }) => {
-            // any error that SMART.ready() may have been rejected with
-            if (error) {
-              return <pre>{error.stack}</pre>;
+          {({ client }) => {
+            if (!client) {
+              SMART.ready()
+                .then(client => {
+                  console.error(`client.getPatientId(): ${client.getPatientId()}`);
+                  console.error(`client.patient.id: ${client.patient.id}`);
+                  this.setState({ client })
+                }
+                )
+                .catch(error => this.setState({ error }));
+              return null;
             }
-
-            // if client is already available render the subtree
-            if (client) {
-              return this.props.children;
-            }
-
-            // client is undefined until SMART.ready() is fulfilled
-            return "Authorizing...";
+            return this.props.children;
           }}
         </FhirClientContext.Consumer>
       </FhirClientContext.Provider>
