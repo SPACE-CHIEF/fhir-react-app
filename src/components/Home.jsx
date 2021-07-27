@@ -25,9 +25,9 @@ export function Title(props){
 export function Content(props){
     return(
         <div className="content-wrap">
-            <p2 className="topic-content">
+            <p className="topic-content">
                 {props.txt}
-            </p2>
+            </p>
         </div>
     );
 }
