@@ -46,7 +46,5 @@ export default class Launcher extends React.Component {
     /**
      * Could also return `null` for empty page
      */
-    render() {
-        return null;
-    }
+    render = () => null;
 }
