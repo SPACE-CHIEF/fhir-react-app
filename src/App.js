@@ -10,10 +10,10 @@ export default function App() {
         <Router>
             <Navigation/>
             <Switch>
-              <Route path="/" exact component={() => <Launcher/>}/>
-              <Route path="/Home" component={() => <Home/>}/>
-              <Route path="/Appointments" component={() => <Appointments/>}/>
-              <Route path="/myGenetics" component={() => <MyGenetics/>}/>
+              <Route exact path="/" exact component={() => <Launcher/>}/>
+              <Route exact path="/Home" component={() => <Home/>}/>
+              <Route exact path="/Appointments" component={() => <Appointments/>}/>
+              <Route exact path="/myGenetics" component={() => <MyGenetics/>}/>
             </Switch>
             {/* <MobileMenu/> */}
             {/* <Footer/> */}
