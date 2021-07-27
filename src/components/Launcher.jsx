@@ -37,11 +37,12 @@ export default class Launcher extends React.Component {
         SMART.authorize({
             clientId: "127afa4e-286f-47ae-ac19-ecc3d7f4ddac",
             scope: "launch patient/Patient.read offline_access openid profile",
-            redirectUri: "https://fhir-react.herokuapp.com/Home",
+            redirectUri: "./Home",
+            // patientID: 87a339d0-8cae-418e-89c7-8651e6aab3c6
             // iss: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSIsImIiOiI4N2EzMzlkMC04Y2FlLTQxOGUtODljNy04NjUxZTZhYWIzYzYifQ/fhir"
-            iss: "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/",
-            // iss: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSJ9/fhir/",
-            launch: "https://fhir-react.herokuapp.com/"
+            // iss: "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/",
+            iss: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSJ9/fhir/",
+            // launch: "https://fhir-react.herokuapp.com/"
         });
     }
     /**
