@@ -7,3 +7,4 @@ export { default as MyGenetics } from "./MyGenetics";
 export { default as Launcher } from "./Launcher";
 export { default as PatientName } from "./Patient/PatientName";
 export { default as PatientDOB } from "./Patient/PatientDOB";
+export { default as Main } from "./Main/Main";
