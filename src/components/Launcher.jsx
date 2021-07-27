@@ -37,11 +37,11 @@ export default class Launcher extends React.Component {
         SMART.authorize({
             clientId: "127afa4e-286f-47ae-ac19-ecc3d7f4ddac",
             // clientId: "cea79e43-d84e-4a3d-aa95-dc96dd68cecd",
-            scope: "launch patient/Patient.read offline_access openid profile",
+            scope: "patient/launch offline_access openid profile patient/AllergyIntolerance.read patient/Binary.readpatient/CarePlan.read patient/CareTeam.read patient/Condition.read patient/Consent.read patient/Device.read patient/DocumentReference.read patient/Encounter.read patient/FamilyMemberHistory.read patient/Goal.read patient/Immunization.read patient/MedicationRequest.read patient/NutritionOrder.read patient/Observation.read patient/Patient.read patient/Person.read patient/Procedure.read patient/Questionnaire.read patient/QuestionnaireResponse.read patient/RelatedPerson.read patient/Schedule.read patient/ServiceRequest.read patient/Slot.read",
             redirectUri: "./Home",
             // patientID: 87a339d0-8cae-418e-89c7-8651e6aab3c6
             // iss: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSIsImIiOiI4N2EzMzlkMC04Y2FlLTQxOGUtODljNy04NjUxZTZhYWIzYzYifQ/fhir"
-            iss: "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/",
+            // iss: "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/",
             // iss: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSJ9/fhir/",
             // launch: "https://fhir-react.herokuapp.com/"
         });
