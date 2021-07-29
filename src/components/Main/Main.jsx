@@ -8,7 +8,7 @@ function Main(){
             <Route path="/Home" component={() => <Home/>}/>
             <Route path="/Appointments" component={() => <Schedule/>}/>
             <Route path="/myGenetics" component={() => <MyGenetics/>}/>
-            <Route path="/Messages" component={() => <Messages/>}></Route>
+            <Route path="/Messages" component={() => <Messages/>}/>
         </Switch>
     )
 };
