@@ -4,7 +4,7 @@ import { Launcher, MyGenetics, Home, Schedule, Messages } from '../';
 function Main(){
     return (
         <Switch>
-            <Route path="/Login" exact component={() => <Launcher/>}/>
+            <Route path="/" exact component={() => <Launcher/>}/>
             <Route path="/Home" component={() => <Home/>}/>
             <Route path="/Appointments" component={() => <Schedule/>}/>
             <Route path="/myGenetics" component={() => <MyGenetics/>}/>
