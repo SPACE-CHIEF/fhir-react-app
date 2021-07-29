@@ -43,7 +43,7 @@ export default class Launcher extends React.Component {
             // iss: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSIsImIiOiI4N2EzMzlkMC04Y2FlLTQxOGUtODljNy04NjUxZTZhYWIzYzYifQ/fhir"
             iss: "https://fhir-myrecord.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d",
             // iss: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSJ9/fhir/",
-            // launch: "https://fhir-react.herokuapp.com/",
+            launch: "https://fhir-react.herokuapp.com/",
             // launch: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSJ9/fhir/"
         });
     }
