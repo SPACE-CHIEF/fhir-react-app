@@ -58,7 +58,7 @@ function Navigation(){
                     <Link to="/myGenetics">myGenetics</Link>
                     {/* <a href="/Settings">Profile Settings</a> */}
                     <Link to="/Settings">Profile Settings</Link>
-                    <Link to="/">Logout</Link>
+                    <Link to="/Login">Logout</Link>
                     {/* <a href="/">Logout</a> */}
                 </div>
             </nav>
