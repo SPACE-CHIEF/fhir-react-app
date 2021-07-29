@@ -1,6 +1,7 @@
 import React from "react"
 import { Navigation, Main }  from "./components"
 import './scss/style.scss'
+import FhirClientProvider  from './components/FhirClientProvider';
 
 export default function App() {
   return (
