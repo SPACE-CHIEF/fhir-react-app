@@ -42,6 +42,7 @@ export default class PatientName extends React.Component {
     }
     componentDidMount() {
         const client = this.context.client;
+        console.log(client)
         this._loader = client.patient
             .read()
             .then(patient => {
