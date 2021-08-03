@@ -23,9 +23,9 @@ function myGenetics() {
                         />
                     </Grid>
                     <Grid item xs={12} sm={3}>
-                        <Page buttonMessage="View All Results" subject={["Test Results", <br />, <strong>Results Available</strong>]}
+                        <Page buttonMessage="View All Results" subject={["Test Results", <br />]}
                             content={["Report Type: ", <strong>Blood Test</strong>, <br />, "Date of Collection: 05/21/2021", <br />,
-                                "Date of Results: 05/24/2021", <br/>, <a>View Report</a>]}
+                                "Date of Results: 05/24/2021", <br/>, <a>View/Print Report</a>]}
                         />
                     </Grid>
                     <Grid item xs={12} sm={3}>
@@ -41,11 +41,11 @@ function myGenetics() {
                         />
                     </Grid> */}
                     <Grid item xs={12} sm={6}>
-                        <PageNoButton subject={["Informational Resources", <br/>]} content={[<a href="https://www.cancer.gov/about-cancer/causes-prevention/genetics/brca-fact-sheet">MBRCA Gene Mutations: Cancer Risk and Genetic Testing Fact Sheet - National Cancer Institute</a>, <br/>,
-                            <a href="https://www.cdc.gov/cancer/breast/young_women/bringyourbrave/hereditary_breast_cancer/brca_gene_mutations.htm">BRCA Gene Mutations | Bring Your Brave | CDC</a>, <br/>,
-                            <a href="https://www.nationalbreastcancer.org/what-to-do-if-youve-tested-positive">What To Do If You've Tested Positive - National Breast Cancer Foundation</a>, <br/>,
-                            <a href="https://www.facingourrisk.org/info/hereditary-cancer-and-genetic-testing/hereditary-cancer-genes-and-risk/genes-by-name/brca1/overview">Overview of BRCA1 gene mutations (facingourrisk.org)</a>, <br/>,
-                            <a href="https://www.facingourrisk.org/info/hereditary-cancer-and-genetic-testing/hereditary-cancer-genes-and-risk/genes-by-name/brca2/overview">Overview of BRCA2 gene mutations (facingourrisk.org)</a>, <br />]}
+                        <PageNoButton subject={["Informational Resources", <br/>]} content={[<a target="_blank" href="https://www.cancer.gov/about-cancer/causes-prevention/genetics/brca-fact-sheet">MBRCA Gene Mutations: Cancer Risk and Genetic Testing Fact Sheet - National Cancer Institute</a>, <br/>,
+                            <a target="_blank" href="https://www.cdc.gov/cancer/breast/young_women/bringyourbrave/hereditary_breast_cancer/brca_gene_mutations.htm">BRCA Gene Mutations | Bring Your Brave | CDC</a>, <br/>,
+                            <a target="_blank" href="https://www.nationalbreastcancer.org/what-to-do-if-youve-tested-positive">What To Do If You've Tested Positive - National Breast Cancer Foundation</a>, <br/>,
+                            <a target="_blank" href="https://www.facingourrisk.org/info/hereditary-cancer-and-genetic-testing/hereditary-cancer-genes-and-risk/genes-by-name/brca1/overview">Overview of BRCA1 gene mutations (facingourrisk.org)</a>, <br/>,
+                            <a target="_blank" href="https://www.facingourrisk.org/info/hereditary-cancer-and-genetic-testing/hereditary-cancer-genes-and-risk/genes-by-name/brca2/overview">Overview of BRCA2 gene mutations (facingourrisk.org)</a>, <br />]}
                         />
                     </Grid>
                 </Grid>
