@@ -38,7 +38,6 @@ export default class Launcher extends React.Component {
         SMART.authorize({
             clientId: "127afa4e-286f-47ae-ac19-ecc3d7f4ddac",
             // clientId: "cea79e43-d84e-4a3d-aa95-dc96dd68cecd",
-<<<<<<< HEAD
             scope: "launch launch/patient offline_access openid profile patient/Patient.read fhirUser",
             // redirectUri: "https://fhir-react.herokuapp.com/Home",
             redirectUri: "http://localhost:3000/Home",
@@ -46,16 +45,10 @@ export default class Launcher extends React.Component {
             // iss: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSIsImIiOiI4N2EzMzlkMC04Y2FlLTQxOGUtODljNy04NjUxZTZhYWIzYzYifQ/fhir"
             // iss: "https://fhir-myrecord.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d",
             iss: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSJ9/fhir/",
-=======
             scope: "launch launch/patient online_access openid profile patient/Patient.read fhirUser",
-            redirectUri: "https://fhir-react.herokuapp.com/Home",
+            redirectUri: "./Home",
             // patientID: 87a339d0-8cae-418e-89c7-8651e6aab3c6
             // iss: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSIsImIiOiI4N2EzMzlkMC04Y2FlLTQxOGUtODljNy04NjUxZTZhYWIzYzYifQ/fhir"
-            iss: "https://fhir-myrecord.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d",
-            // iss: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSJ9/fhir/",
->>>>>>> 2238102f15f0409919b6e18b53921d3c57ffb179
-            // launch: "http://localhost:3000/",
-            // launch: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSJ9/fhir/"
         });
     }
     /**

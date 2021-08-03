@@ -4,6 +4,8 @@ import { Page } from "./Home";
 import PageNoButton from './PageNoButton';
 import PatientName from "./Patient/PatientName";
 import FhirClientProvider from "./FhirClientProvider";
+import Popout from "./Popout/Popout";
+
 function myGenetics() {
     return (
         <FhirClientProvider>
@@ -12,7 +14,7 @@ function myGenetics() {
                     <Grid item xs={12} sm={12}>
                         <PageNoButton subject={<PatientName/>} content={["Age: 39, DOB: 05/06/1977, Gender: Male", <br/>,
                             "Patient ID: 69432132, Phone: 561-321-1513", <br />, "PCP: Dr. Yuan, Phone: 671-456-7841",
-                            <br/>, "Insurance: Aetna Better Health"]}
+                            <br/>, "Insurance: Aetna Better Health", <Popout/>]}
                         />
                     </Grid>
                     <Grid item xs={12} sm={3}>

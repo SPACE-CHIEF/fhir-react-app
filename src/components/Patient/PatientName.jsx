@@ -10,28 +10,8 @@ function PName({ name = [] }) {
     return <b>{entry.given.join(" ") + " " + entry.family}</b>;
 }
 
-
-// function PatientPhone(patient){
-//     return <p>{patient.telecom[0].value}</p>
-// }
-
-
-// function PatientBanner(patient) {
-//     return (
-//         <div>
-//             <PatientName name={patient.name} />
-//             <span>
-//                 Gender: <b>{patient.gender}</b>,{" "}
-//             </span>
-//             <span>
-//                 DOB: <b>{patient.birthDate}</b>
-//             </span>
-//         </div>
-//     );
-// }
-
 export default class PatientName extends React.Component {
-    static contextType = FhirClientContext;
+    static client = FhirClientContext;
     constructor(props) {
         super(props);
         this.state = {
