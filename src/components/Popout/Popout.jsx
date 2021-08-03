@@ -42,26 +42,31 @@ export default function FullScreenDialog(props) {
   return (
     <div>
       <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-        Open full-screen dialog
+        More info
       </Button>
       <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
         <AppBar className={classes.appBar}>
           <Toolbar>
-            <Typography variant="h6" className={classes.title}>
+            <Typography variant="h6" align="center" className={classes.title}>
                 {props.name}
             </Typography>
             <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
-              <CloseIcon />
+              <CloseIcon/>
             </IconButton>
           </Toolbar>
         </AppBar>
         <List>
           <ListItem button>
-            <ListItemText primary="Phone ringtone" secondary="Titania" />
+            <ListItemText primary="Medication History" secondary={props.medications} />
           </ListItem>
           <Divider />
           <ListItem button>
-            <ListItemText primary="Default notification ringtone" secondary="Tethys" />
+            <ListItemText primary="Family History" secondary={props.family}
+            />
+          </ListItem>
+          <Divider />
+          <ListItem button>
+            <ListItemText primary="Care Team" secondary={props.careTeam} />
           </ListItem>
         </List>
       </Dialog>
