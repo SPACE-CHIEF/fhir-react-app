@@ -11,7 +11,7 @@ function PName({ name = [] }) {
 }
 
 export default class PatientName extends React.Component {
-    static client = FhirClientContext;
+    static contextType = FhirClientContext;
     constructor(props) {
         super(props);
         this.state = {
@@ -22,7 +22,6 @@ export default class PatientName extends React.Component {
     }
     componentDidMount() {
         const client = this.context.client;
-        console.log(client)
         this._loader = client.patient
             .read()
             .then(patient => {
