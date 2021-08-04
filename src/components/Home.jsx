@@ -6,7 +6,7 @@ function BoxNav(props){
     return(
       <div className="navBox">
         <div className="box-nav-wrap">
-          <a href="#" class="button">{props.txt}</a>
+          <a href={props.link} class="button">{props.txt}</a>
         </div>
       </div>
     );
@@ -37,7 +37,7 @@ export function Page(props){
         <div className="total-wrapper-dsktp">
             <Title subject={props.subject}/>
             <Content txt={props.content}/>
-            <BoxNav txt={props.buttonMessage}/>
+            <BoxNav txt={props.buttonMessage} link={props.link}/>
         </div>
     );
 }
@@ -49,18 +49,15 @@ function Home(props) {
             <div style={{ marginRight: 24, marginLeft: 24, marginTop: 10, marginBottom: 20 }}>
                 <Grid container spacing={2}>
                     <Grid item xs={12} sm={12}>
-                        <Page buttonMessage="Send Message" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Nullam lacus tellus, semper et nulla quis, pharetra cursus metus. Fusce tincidunt mattis diam." subject="New Messages"
+                        <Page link= "./Messages" buttonMessage="Send Message" content="New unread message from Dr. Albertine Orn" subject="New Messages"
                         />
                     </Grid>
                     <Grid item xs={12} sm={12}>
-                        <Page buttonMessage="See Genetic Analysis" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Nullam lacus tellus, semper et nulla quis, pharetra cursus metus. Fusce tincidunt mattis diam." subject="myGenetics"
+                        <Page link ="./myGenetics" buttonMessage="See Genetic Analysis" content="Genetic Report is now availabe to view/print" subject="myGenetics"
                         />
                     </Grid>
                     <Grid item xs={12} sm={12}>
-                        <Page buttonMessage="See All Visits" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Nullam lacus tellus, semper et nulla quis, pharetra cursus metus. Fusce tincidunt mattis diam." subject="Upcoming Appointments"
+                        <Page link="./Appointments" buttonMessage="See All Visits" content="Reminder: Appointment scheduled for July 26 at 10am" subject="Upcoming Appointments"
                         />
                     </Grid>
                 </Grid>

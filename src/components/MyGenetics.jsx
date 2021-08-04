@@ -7,7 +7,7 @@ import FhirClientProvider from "./FhirClientProvider";
 import Popout from "./Popout/Popout";
 import PatientDOB from './Patient/PatientDOB';
 
-function myGenetics() {
+export default function myGenetics() {
     return (
         <FhirClientProvider>
             <div style={{ marginRight: 24, marginLeft: 24, marginTop: 10, marginBottom: 20 }}>
@@ -24,7 +24,7 @@ function myGenetics() {
                     </Grid>
                     <Grid item xs={12} sm={3}>
                         <Page buttonMessage="View All Results" subject={["Test Results", <br />]}
-                            content={["Report Type: ", <strong>Blood Test</strong>, <br />, "Date of Collection: 05/21/2021", <br />,
+                            content={["Report Type: ", <strong>Genetic Test</strong>, <br />, "Date of Collection: 05/21/2021", <br />,
                                 "Date of Results: 05/24/2021", <br/>, <a>View/Print Report</a>]}
                         />
                     </Grid>
@@ -53,4 +53,3 @@ function myGenetics() {
          </FhirClientProvider>
     );
 }
-export default myGenetics;

@@ -5,12 +5,26 @@ import {
   Scheduler,
   WeekView,
   Appointments,
-  AllDayPanel,
 } from '@devexpress/dx-react-scheduler-material-ui';
 
 import { appointments } from '../../data/appointments';
-
+import { Typography } from '@material-ui/core';
 const currentDate = '2018-06-27';
+
+const Appointment = ({
+  children, style, ...restProps
+}) => (
+  <Appointments.Appointment
+    {...restProps}
+    style={{
+      ...style,
+      backgroundColor: '#3FC7DB',
+      borderRadius: '8px',
+    }}
+  >
+    {children}
+  </Appointments.Appointment>
+);
 
 export default () => (
   <Paper>
@@ -18,6 +32,7 @@ export default () => (
       data={appointments}
       height={660}
     >
+      <Typography align='center' variant='h3'>July</Typography>
       <ViewState
         defaultCurrentDate={currentDate}
       />
